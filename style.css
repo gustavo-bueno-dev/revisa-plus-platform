@@ -1,0 +1,674 @@
+body {
+    position: relative;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    color: #090909;
+    margin: 0;
+    min-height: 100vh;
+    position: relative;
+}
+
+.bg {
+    position: fixed;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.8s ease;
+    z-index: -1;
+}
+
+.bg-light {
+    background-image: url("./white-theme.png");
+    opacity: 1;
+}
+
+.bg-dark {
+    background-image: url("./black-theme.png");
+    opacity: 0;
+}
+
+body.dark .bg-light {
+    opacity: 0;
+}
+
+body.dark .bg-dark {
+    opacity: 1;
+}
+
+.dark {
+    color: #fff;
+}
+
+.dark p {
+    color: #fff;
+}
+
+.revisa {
+    position: absolute;
+    top: -70px;
+    left: 510px;
+    width: 350px;
+}
+
+.theme-button {
+    position: absolute;
+    top: 150px;
+    left: 660px;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 3px solid #310bb9;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.theme-button:hover {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    background-color: #0909091c;
+}
+
+.login-div {
+    position: absolute;
+    top: 230px;
+    left: 520px;
+    width: 300px;
+    height: 350px;
+    border: 3px solid #310bb9;
+    border-radius: 30px;
+}
+
+.revisa-login {
+    position: absolute;
+    width: 270px;
+    top: 190px;
+    left: 470px;
+}
+
+.separador {
+    position: absolute;
+    top: 205px;
+    left: 680px;
+    color: #000000;
+    font-size: 40px;
+}
+
+.biangulo {
+    position: absolute;
+    width: 140px;
+    top: 200px;
+    left: 670px;
+}
+
+.login-p {
+    position: absolute;
+    top: 300px;
+    left: 535px;
+    font-size: 12px;
+}
+
+.email-title {
+    position: absolute;
+    top: 320px;
+    left: 640px;
+    font-size: 20px;
+}
+
+.email {
+    position: absolute;
+    top: 380px;
+    left: 550px;
+    width: 230px;
+    padding: 7px;
+    border: 2px solid #310bb9;
+    border-radius: 20px;
+    background-color: transparent;
+    color: #310bb9;
+    font-weight: 700;
+}
+
+.senha-title {
+    position: absolute;
+    top: 420px;
+    left: 640px;
+    font-size: 20px;
+}
+
+.senha {
+    position: absolute;
+    top: 480px;
+    left: 550px;
+    width: 230px;
+    padding: 7px;
+    border: 2px solid #310bb9;
+    border-radius: 20px;
+    background-color: transparent;
+    color: #310bb9;
+    font-weight: 700;
+}
+
+.senha::-ms-reveal {
+    filter: invert(18%) sepia(90%) saturate(3000%) hue-rotate(240deg);
+}
+
+.botao-login {
+    position: absolute;
+    top: 530px;
+    left: 615px;
+    font-weight: 900;
+    width: 120px;
+    height: 40px;
+    background-color: #310bb9;
+    border: 2px solid #120541;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.botao-login:hover {
+    width: 140px;
+    height: 45px;
+    font-size: 15px;
+    background-color: #250a86;
+    border: 1px solid #120541;
+}
+
+.hidden {
+   display: none !important;
+}
+
+.redacao-img {
+    position: absolute;
+    width: 440px;
+    top: -45px;
+    left: -120px;
+    transition: 0.5s;
+}
+
+.redacao {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 3px solid #120541;
+    border-radius: 300px;
+    top: 120px;
+    left: 200px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.redacao:hover {
+    transform: scale(1.1);
+}
+
+.redacao-img:hover {
+    transform: scale(1.1);
+}
+
+.redacao-title {
+    position: absolute;
+    font-size: 30px;
+    font-weight: 900;
+    color: #250a86;
+    top: 320px;
+    left: 215px;
+}
+
+.historia-img {
+    position: absolute;
+    width: 440px;
+    top: -45px;
+    left: -140px;
+    transition: 0.5s;
+}
+
+.historia {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 3px solid #120541;
+    border-radius: 300px;
+    top: 500px;
+    left: 200px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.historia:hover {
+    transform: scale(1.1);
+}
+
+.historia-img:hover {
+    transform: scale(1.1);
+}
+
+.historia-title {
+    position: absolute;
+    font-size: 30px;
+    font-weight: 900;
+    color: #250a86;
+    top: 700px;
+    left: 200px;
+}
+
+.theme-button-site {
+    position: absolute;
+    top: 20px;
+    left: 860px;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 3px solid #310bb9;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.theme-button-site:hover {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    background-color: #0909091c;
+}
+
+.portugues-img {
+    position: relative;
+    width: 400px;
+    top: -20px;
+    left: -110px;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.portugues {
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    border: 3px solid #120541;
+    border-radius: 300px;
+    top: 120px;
+    left: 600px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.portugues:hover {
+    transform: scale(1.1);
+}
+
+.portugues-title {
+    position: absolute;
+    font-size: 30px;
+    font-weight: 900;
+    color: #250a86;
+    top: 320px;
+    left: 600px;
+}
+
+.cadeado {
+    position: absolute;
+    width: 180px;
+    left: 610px;
+    top: 140px;
+    z-index: 2;
+}
+
+.teacher-r {
+    position: absolute;
+    width: 250px;
+    top: 120px;
+    left: 300px;
+    border-radius: 30px;
+}
+
+.name-of-teach-r {
+    position: absolute;
+    top: 500px;
+    left: 350px;
+    color: aqua;
+    background-color: #250a86;
+    border: 3px solid #120541;
+    padding: 7px;
+    border-radius: 20px;
+}
+
+.button-teoria-r {
+    position: absolute;
+    height: 120px;
+    padding: 15px;
+    width: 640px;
+    top: 130px;
+    left: 600px;
+    background-color: #310bb9;
+    border: 3px solid #120541;
+    border-radius: 12px;
+    font-size: 70px;
+    color: aqua;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.button-teoria-r:hover {
+    transform: scale(1.1);
+    background-color: #23068b;
+    color: #08b3b3;
+}
+
+.button-revisao-r {
+    position: absolute;
+    height: 120px;
+    padding: 15px;
+    width: 640px;
+    top: 350px;
+    left: 620px;
+    background-color: #310bb9;
+    border: 3px solid #120541;
+    border-radius: 12px;
+    font-size: 70px;
+    color: aqua;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.button-revisao-r:hover {
+    transform: scale(1.1);
+    background-color: #23068b;
+    color: #08b3b3;
+}
+
+#redacao-container-revisao {
+    padding: 5px;
+    font-size: 14px;
+    color: #150550;
+}
+
+span {
+    color: #0bbdbd;
+}
+
+.box-r {
+    height: 30px;
+    width: 700px;
+}
+
+.gabarito-redacao {
+    height: 40px;
+    width: 120px;
+    font-size: 19px;
+    background-color: #310bb9;
+    border: 3px solid #120541;
+    color: aqua;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#gabarito-container-redacao {
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    padding: 5px;
+    font-size: 14px;
+    color: #150550;
+}
+
+/*História*/
+
+.teacher-h {
+    position: absolute;
+    width: 250px;
+    top: 120px;
+    left: 300px;
+    border-radius: 30px;
+}
+
+.name-of-teach-h {
+    position: absolute;
+    top: 500px;
+    left: 350px;
+    color: aqua;
+    background-color: #250a86;
+    border: 3px solid #120541;
+    padding: 7px;
+    border-radius: 20px;
+}
+
+.button-teoria-h {
+    position: absolute;
+    height: 120px;
+    padding: 15px;
+    width: 640px;
+    top: 130px;
+    left: 600px;
+    background-color: #310bb9;
+    border: 3px solid #120541;
+    border-radius: 12px;
+    font-size: 70px;
+    color: aqua;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.button-teoria-h:hover {
+    transform: scale(1.1);
+    background-color: #23068b;
+    color: #08b3b3;
+}
+
+.button-revisao-h {
+    position: absolute;
+    height: 120px;
+    padding: 15px;
+    width: 640px;
+    top: 350px;
+    left: 620px;
+    background-color: #310bb9;
+    border: 3px solid #120541;
+    border-radius: 12px;
+    font-size: 70px;
+    color: aqua;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.button-revisao-h:hover {
+    transform: scale(1.1);
+    background-color: #23068b;
+    color: #08b3b3;
+}
+
+#historia-container-revisao {
+    padding: 5px;
+    font-size: 14px;
+    color: #150550;
+}
+
+.gabarito-historia {
+    height: 40px;
+    width: 120px;
+    font-size: 19px;
+    background-color: #310bb9;
+    border: 3px solid #120541;
+    color: aqua;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#gabarito-container-historia {
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    padding: 5px;
+    font-size: 14px;
+    color: #150550;
+}
+
+.desktop-warning{
+    margin-top: 70px;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    font-weight: 600;
+}
+
+.aviso{
+    margin-top:20px;
+    padding:12px 20px;
+    border-radius:10px;
+    background:#fff3cd;
+    color:#856404;
+    border:1px solid #ffeeba;
+    font-weight:bold;
+}
+
+/* ===========================
+   RESPONSIVIDADE PARA CELULAR
+   =========================== */
+
+@media (max-width: 768px) {
+
+body{
+    overflow-x: hidden;
+    zoom: 0.75;
+}
+
+.revisa{
+    position: static;
+    width: 220px;
+    margin-top: 10px;
+}
+
+.theme-button,
+.theme-button-site{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    left: auto;
+    z-index: 1000;
+}
+
+.login-div{
+    position: static;
+    width: 90%;
+    max-width: 320px;
+    height: auto;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.revisa-login,
+.separador,
+.biangulo{
+    display: none;
+}
+
+.login-p,
+.email-title,
+.email,
+.senha-title,
+.senha,
+.botao-login{
+    position: static;
+    display: block;
+    margin: 12px auto;
+    width: 90%;
+    text-align: center;
+}
+
+.email,
+.senha{
+    width: 90%;
+    box-sizing: border-box;
+}
+
+.botao-login{
+    width: 150px;
+}
+
+/* MENU */
+
+.redacao,
+.historia,
+.portugues{
+    position: static;
+    display: block;
+    margin: 25px auto;
+}
+
+.redacao-title,
+.historia-title,
+.portugues-title{
+    position: static;
+    text-align: center;
+    margin-top: -15px;
+    margin-bottom: 25px;
+}
+
+.cadeado{
+    display: none;
+}
+
+/* PROFESSORES */
+
+.teacher-r,
+.teacher-h{
+    position: static;
+    display: block;
+    width: 180px;
+    margin: 20px auto;
+}
+
+.name-of-teach-r,
+.name-of-teach-h{
+    position: static;
+    display: table;
+    margin: auto;
+}
+
+.button-teoria-r,
+.button-revisao-r,
+.button-teoria-h,
+.button-revisao-h{
+    position: static;
+    display: block;
+    width: 90%;
+    height: 70px;
+    margin: 20px auto;
+    font-size: 32px;
+}
+
+/* QUESTÕES */
+
+#redacao-container-revisao,
+#gabarito-container-redacao,
+#historia-container-revisao,
+#gabarito-container-historia{
+
+    width:95%;
+    margin:auto;
+    padding:15px;
+    font-size:17px;
+}
+
+.box-r{
+    width:100%;
+    box-sizing:border-box;
+}
+
+h1{
+    font-size:25px;
+}
+
+h2{
+    font-size:20px;
+}
+
+p,label{
+    font-size:17px;
+}
+
+}
