@@ -310,12 +310,79 @@ body.dark .bg-dark {
     left: 600px;
 }
 
-.cadeado {
+.ciencias {
     position: absolute;
-    width: 180px;
-    left: 610px;
-    top: 140px;
-    z-index: 2;
+    width: 190px;
+    height: 190px;
+    border: 3px solid #120541;
+    border-radius: 300px;
+    top: 500px;
+    left: 600px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.ciencias:hover {
+    transform: scale(1.1);
+}
+
+.ciencias-title {
+    position: absolute;
+    font-size: 30px;
+    font-weight: 900;
+    color: #250a86;
+    top: 700px;
+    left: 600px;
+}
+
+.matematica {
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    border: 3px solid #120541;
+    border-radius: 300px;
+    top: 120px;
+    left: 1000px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.matematica:hover {
+    transform: scale(1.1);
+}
+
+.matematica-title {
+    position: absolute;
+    font-size: 30px;
+    font-weight: 900;
+    color: #250a86;
+    top: 320px;
+    left: 1000px;
+}
+
+.espanhol {
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    border: 3px solid #120541;
+    border-radius: 300px;
+    top: 500px;
+    left: 1000px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.espanhol:hover {
+    transform: scale(1.1);
+}
+
+.espanhol-title {
+    position: absolute;
+    font-size: 30px;
+    font-weight: 900;
+    color: #250a86;
+    top: 700px;
+    left: 1020px;
 }
 
 .teacher-r {
@@ -525,6 +592,51 @@ span {
     font-weight:bold;
 }
 
+
+.button-teoria-c {
+    position: absolute;
+    height: 120px;
+    padding: 15px;
+    width: 640px;
+    top: 130px;
+    left: 600px;
+    background-color: #310bb9;
+    border: 3px solid #120541;
+    border-radius: 12px;
+    font-size: 70px;
+    color: aqua;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.button-teoria-c:hover {
+    transform: scale(1.1);
+    background-color: #23068b;
+    color: #08b3b3;
+}
+
+.button-revisao-c {
+    position: absolute;
+    height: 120px;
+    padding: 15px;
+    width: 640px;
+    top: 350px;
+    left: 620px;
+    background-color: #310bb9;
+    border: 3px solid #120541;
+    border-radius: 12px;
+    font-size: 70px;
+    color: aqua;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.button-revisao-c:hover {
+    transform: scale(1.1);
+    background-color: #23068b;
+    color: #08b3b3;
+}
+
 /* ===========================
    RESPONSIVIDADE PARA CELULAR
    =========================== */
@@ -669,6 +781,8 @@ h2{
 
 p,label{
     font-size:17px;
+}
+
 }
 
 }
