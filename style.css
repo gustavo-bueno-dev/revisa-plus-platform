@@ -705,7 +705,8 @@ body{
 
 .redacao,
 .historia,
-.portugues{
+.portugues,
+.ciencias{
     position: static;
     display: block;
     margin: 25px auto;
@@ -713,7 +714,8 @@ body{
 
 .redacao-title,
 .historia-title,
-.portugues-title{
+.portugues-title,
+.ciencias-title{
     position: static;
     text-align: center;
     margin-top: -15px;
@@ -744,7 +746,9 @@ body{
 .button-teoria-r,
 .button-revisao-r,
 .button-teoria-h,
-.button-revisao-h{
+.button-revisao-h,
+.button-teoria-c,
+.button-revisao-c{
     position: static;
     display: block;
     width: 90%;
@@ -781,8 +785,6 @@ h2{
 
 p,label{
     font-size:17px;
-}
-
 }
 
 }
