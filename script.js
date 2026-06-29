@@ -96,3 +96,12 @@ gabaritoHistoria.addEventListener("click", function(event) {
     historiaContainerRevisao.classList.add("hidden");
     gabaritoContainerHistoria.classList.remove("hidden");
 });
+
+let cienciasButton = document.querySelector(".ciencias");
+let cienciasContainer = document.querySelector("#ciencias-container")
+
+cienciasButton.addEventListener("click", function() {
+    site.classList.add("hidden")
+    cienciasContainer.classList.remove("hidden")
+})
+});
