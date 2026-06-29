@@ -99,8 +99,13 @@ gabaritoHistoria.addEventListener("click", function(event) {
 
 let cienciasButton = document.querySelector(".ciencias");
 let cienciasContainer = document.querySelector("#ciencias-container")
+let buttonTeoriaC = document.querySelector(".button-teoria-c")
 
 cienciasButton.addEventListener("click", function() {
     site.classList.add("hidden")
     cienciasContainer.classList.remove("hidden")
+})
+
+buttonTeoriaC.addEventListener("click", function() {
+    alert ("INFELIZMENTE POR O CONTEÚDO SER MUITO EXTENSO EU NÃO CONSEGUI FAZER AS TEORIAS MAS A REVISÃO ESTÁ TODO O CONTEÚDO...")
 })
