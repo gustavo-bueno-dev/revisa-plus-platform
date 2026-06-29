@@ -104,4 +104,3 @@ cienciasButton.addEventListener("click", function() {
     site.classList.add("hidden")
     cienciasContainer.classList.remove("hidden")
 })
-});
