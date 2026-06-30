@@ -637,6 +637,52 @@ span {
     color: #08b3b3;
 }
 
+/* ESPANHOL */
+
+.button-teoria-e {
+    position: absolute;
+    height: 120px;
+    padding: 15px;
+    width: 640px;
+    top: 130px;
+    left: 600px;
+    background-color: #310bb9;
+    border: 3px solid #120541;
+    border-radius: 12px;
+    font-size: 70px;
+    color: aqua;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.button-teoria-e:hover {
+    transform: scale(1.1);
+    background-color: #23068b;
+    color: #08b3b3;
+}
+
+.button-revisao-e {
+    position: absolute;
+    height: 120px;
+    padding: 15px;
+    width: 640px;
+    top: 350px;
+    left: 620px;
+    background-color: #310bb9;
+    border: 3px solid #120541;
+    border-radius: 12px;
+    font-size: 70px;
+    color: aqua;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.button-revisao-e:hover {
+    transform: scale(1.1);
+    background-color: #23068b;
+    color: #08b3b3;
+}
+
 /* ===========================
    RESPONSIVIDADE PARA CELULAR
    =========================== */
@@ -706,7 +752,8 @@ body{
 .redacao,
 .historia,
 .portugues,
-.ciencias{
+.ciencias,
+.espanhol {
     position: static;
     display: block;
     margin: 25px auto;
@@ -715,7 +762,8 @@ body{
 .redacao-title,
 .historia-title,
 .portugues-title,
-.ciencias-title{
+.ciencias-title,
+.espanhol-title{
     position: static;
     text-align: center;
     margin-top: -15px;
@@ -748,7 +796,9 @@ body{
 .button-teoria-h,
 .button-revisao-h,
 .button-teoria-c,
-.button-revisao-c{
+.button-revisao-c,
+.button-teoria-e,
+.button-revisao-e {
     position: static;
     display: block;
     width: 90%;
