@@ -109,3 +109,13 @@ cienciasButton.addEventListener("click", function() {
 buttonTeoriaC.addEventListener("click", function() {
     alert ("INFELIZMENTE POR O CONTEÚDO SER MUITO EXTENSO EU NÃO CONSEGUI FAZER AS TEORIAS MAS A REVISÃO ESTÁ TODO O CONTEÚDO...")
 })
+
+// ESPANHOL
+
+let espanholButton = document.querySelector(".espanhol");
+let espanholContainer = document.querySelector("#espanhol-container")
+
+espanholButton.addEventListener("click", function() {
+    site.classList.add("hidden")
+    espanholContainer.classList.remove("hidden")
+})
